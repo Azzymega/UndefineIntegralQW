@@ -54,7 +54,7 @@
             // button1
             // 
             button1.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(310, 85);
+            button1.Location = new Point(323, 156);
             button1.Name = "button1";
             button1.Size = new Size(154, 59);
             button1.TabIndex = 0;
@@ -64,7 +64,7 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(12, 12);
+            textBox1.Location = new Point(54, 84);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(300, 60);
@@ -72,7 +72,7 @@
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(462, 12);
+            textBox2.Location = new Point(431, 84);
             textBox2.Multiline = true;
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(300, 60);
@@ -81,8 +81,9 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 48F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(352, -4);
+            label1.Location = new Point(355, 58);
             label1.Name = "label1";
             label1.Size = new Size(81, 86);
             label1.TabIndex = 3;
@@ -91,9 +92,9 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.a;
-            pictureBox1.Location = new Point(12, 164);
+            pictureBox1.Location = new Point(52, 221);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(375, 92);
+            pictureBox1.Size = new Size(343, 62);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
@@ -101,9 +102,9 @@
             // pictureBox2
             // 
             pictureBox2.Image = Properties.Resources.b;
-            pictureBox2.Location = new Point(12, 262);
+            pictureBox2.Location = new Point(52, 289);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(375, 92);
+            pictureBox2.Size = new Size(343, 62);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 5;
             pictureBox2.TabStop = false;
@@ -111,9 +112,9 @@
             // pictureBox3
             // 
             pictureBox3.Image = Properties.Resources.c;
-            pictureBox3.Location = new Point(12, 360);
+            pictureBox3.Location = new Point(52, 357);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(375, 92);
+            pictureBox3.Size = new Size(343, 62);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 6;
             pictureBox3.TabStop = false;
@@ -121,9 +122,9 @@
             // pictureBox4
             // 
             pictureBox4.Image = Properties.Resources.d;
-            pictureBox4.Location = new Point(12, 458);
+            pictureBox4.Location = new Point(52, 425);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(375, 92);
+            pictureBox4.Size = new Size(343, 62);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox4.TabIndex = 7;
             pictureBox4.TabStop = false;
@@ -131,9 +132,9 @@
             // pictureBox5
             // 
             pictureBox5.Image = Properties.Resources.e;
-            pictureBox5.Location = new Point(393, 164);
+            pictureBox5.Location = new Point(401, 221);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(379, 92);
+            pictureBox5.Size = new Size(330, 62);
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox5.TabIndex = 8;
             pictureBox5.TabStop = false;
@@ -141,9 +142,9 @@
             // pictureBox6
             // 
             pictureBox6.Image = Properties.Resources.f;
-            pictureBox6.Location = new Point(393, 262);
+            pictureBox6.Location = new Point(401, 289);
             pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(379, 92);
+            pictureBox6.Size = new Size(330, 62);
             pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox6.TabIndex = 9;
             pictureBox6.TabStop = false;
@@ -151,9 +152,9 @@
             // pictureBox7
             // 
             pictureBox7.Image = Properties.Resources.q;
-            pictureBox7.Location = new Point(393, 360);
+            pictureBox7.Location = new Point(401, 357);
             pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(379, 92);
+            pictureBox7.Size = new Size(330, 62);
             pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox7.TabIndex = 10;
             pictureBox7.TabStop = false;
@@ -161,9 +162,9 @@
             // pictureBox8
             // 
             pictureBox8.Image = Properties.Resources.h;
-            pictureBox8.Location = new Point(393, 458);
+            pictureBox8.Location = new Point(401, 425);
             pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(379, 92);
+            pictureBox8.Size = new Size(330, 62);
             pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox8.TabIndex = 11;
             pictureBox8.TabStop = false;
@@ -172,7 +173,11 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources.school_blackboard;
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(784, 561);
+            Controls.Add(textBox1);
+            Controls.Add(textBox2);
             Controls.Add(pictureBox8);
             Controls.Add(pictureBox7);
             Controls.Add(pictureBox6);
@@ -182,8 +187,6 @@
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Controls.Add(label1);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
             Controls.Add(button1);
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;

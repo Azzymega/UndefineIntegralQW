@@ -3,7 +3,7 @@ namespace UndefineIntegralQW
 {
     public partial class Form1 : Form
     {
-        private UndefinedIntegral integral;
+        private UndefinedIntegral? integral;
         public Form1()
         {
             InitializeComponent();
@@ -12,7 +12,18 @@ namespace UndefineIntegralQW
         {
             try
             {
-                integral = new UndefinedIntegral(textBox1.Text,new UndefineIntegralEvaluator(textBox1.Text));
+                string s = new string("");
+                byte[] buffer = File.ReadAllBytes("C:\\Users\\Student\\Desktop\\Test.csv");
+                foreach (byte b in buffer)
+                {
+                    if (b == 13)
+                    {
+                        break;
+                    }
+                    s += (char)b;
+                } // CSV. ֿונובנמסטעü ג פנוילגמנך.
+                MessageBox.Show(s);
+                integral = new UndefinedIntegral(s, new UndefineIntegralEvaluator(s));
                 textBox2.Text = integral.ReturnAnswer();
             }
             catch

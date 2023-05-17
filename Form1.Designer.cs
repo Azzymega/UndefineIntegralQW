@@ -41,6 +41,9 @@
             pictureBox6 = new PictureBox();
             pictureBox7 = new PictureBox();
             pictureBox8 = new PictureBox();
+            label2 = new Label();
+            button2 = new Button();
+            label3 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -64,14 +67,16 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(54, 84);
+            textBox1.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox1.Location = new Point(83, 84);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(300, 60);
+            textBox1.Size = new Size(271, 60);
             textBox1.TabIndex = 1;
             // 
             // textBox2
             // 
+            textBox2.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             textBox2.Location = new Point(431, 84);
             textBox2.Multiline = true;
             textBox2.Name = "textBox2";
@@ -83,6 +88,7 @@
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 48F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.ForeColor = SystemColors.ButtonHighlight;
             label1.Location = new Point(355, 58);
             label1.Name = "label1";
             label1.Size = new Size(81, 86);
@@ -131,7 +137,7 @@
             // 
             // pictureBox5
             // 
-            pictureBox5.Image = Properties.Resources.e;
+            pictureBox5.Image = Properties.Resources.cosaxdx;
             pictureBox5.Location = new Point(401, 221);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(330, 62);
@@ -141,7 +147,7 @@
             // 
             // pictureBox6
             // 
-            pictureBox6.Image = Properties.Resources.f;
+            pictureBox6.Image = Properties.Resources.sinaxdx;
             pictureBox6.Location = new Point(401, 289);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(330, 62);
@@ -151,7 +157,7 @@
             // 
             // pictureBox7
             // 
-            pictureBox7.Image = Properties.Resources.q;
+            pictureBox7.Image = Properties.Resources.dxx2a2;
             pictureBox7.Location = new Point(401, 357);
             pictureBox7.Name = "pictureBox7";
             pictureBox7.Size = new Size(330, 62);
@@ -161,7 +167,7 @@
             // 
             // pictureBox8
             // 
-            pictureBox8.Image = Properties.Resources.h;
+            pictureBox8.Image = Properties.Resources.dxa2x2;
             pictureBox8.Location = new Point(401, 425);
             pictureBox8.Name = "pictureBox8";
             pictureBox8.Size = new Size(330, 62);
@@ -169,14 +175,52 @@
             pictureBox8.TabIndex = 11;
             pictureBox8.TabStop = false;
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Arial Narrow", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.ForeColor = SystemColors.ButtonHighlight;
+            label2.Location = new Point(52, 190);
+            label2.Name = "label2";
+            label2.Size = new Size(257, 23);
+            label2.TabIndex = 12;
+            label2.Text = "Допустимые типы интегралов:";
+            // 
+            // button2
+            // 
+            button2.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            button2.Location = new Point(483, 156);
+            button2.Name = "button2";
+            button2.Size = new Size(154, 59);
+            button2.TabIndex = 13;
+            button2.Text = "Инструкция";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
+            label3.Font = new Font("Segoe UI", 48F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.ForeColor = SystemColors.ButtonHighlight;
+            label3.Location = new Point(29, 58);
+            label3.Name = "label3";
+            label3.Size = new Size(72, 86);
+            label3.TabIndex = 14;
+            label3.Text = "∫";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.school_blackboard;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(784, 561);
+            ClientSize = new Size(785, 561);
             Controls.Add(textBox1);
+            Controls.Add(label3);
+            Controls.Add(button2);
+            Controls.Add(label2);
             Controls.Add(textBox2);
             Controls.Add(pictureBox8);
             Controls.Add(pictureBox7);
@@ -220,5 +264,8 @@
         private PictureBox pictureBox6;
         private PictureBox pictureBox7;
         private PictureBox pictureBox8;
+        private Label label2;
+        private Button button2;
+        private Label label3;
     }
 }

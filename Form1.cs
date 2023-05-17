@@ -31,5 +31,10 @@ namespace UndefineIntegralQW
                 MessageBox.Show("Вы ошиблись при вводе. Поправьте ошибку.");
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(QWFramework.Instruction.Instruction.ReturnInstructionText());
+        }
     }
 }

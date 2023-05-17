@@ -93,9 +93,39 @@ namespace UndefineIntegralQW.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap cosaxdx {
+            get {
+                object obj = ResourceManager.GetObject("cosaxdx", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap d {
             get {
                 object obj = ResourceManager.GetObject("d", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap dxa2x2 {
+            get {
+                object obj = ResourceManager.GetObject("dxa2x2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap dxx2a2 {
+            get {
+                object obj = ResourceManager.GetObject("dxx2a2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -166,6 +196,16 @@ namespace UndefineIntegralQW.Properties {
         public static System.Drawing.Bitmap school_blackboard {
             get {
                 object obj = ResourceManager.GetObject("school-blackboard", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap sinaxdx {
+            get {
+                object obj = ResourceManager.GetObject("sinaxdx", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

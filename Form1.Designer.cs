@@ -44,6 +44,8 @@
             label2 = new Label();
             button2 = new Button();
             label3 = new Label();
+            button3 = new Button();
+            button4 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -210,6 +212,26 @@
             label3.TabIndex = 14;
             label3.Text = "∫";
             // 
+            // button3
+            // 
+            button3.Location = new Point(12, 3);
+            button3.Name = "button3";
+            button3.Size = new Size(222, 23);
+            button3.TabIndex = 15;
+            button3.Text = "Выгрузить в текстовый редактор";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
+            // button4
+            // 
+            button4.Location = new Point(240, 3);
+            button4.Name = "button4";
+            button4.Size = new Size(222, 23);
+            button4.TabIndex = 16;
+            button4.Text = "Выгрузить в табличный процессор";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -217,6 +239,8 @@
             BackgroundImage = Properties.Resources.school_blackboard;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(785, 561);
+            Controls.Add(button4);
+            Controls.Add(button3);
             Controls.Add(textBox1);
             Controls.Add(label3);
             Controls.Add(button2);
@@ -267,5 +291,7 @@
         private Label label2;
         private Button button2;
         private Label label3;
+        private Button button3;
+        private Button button4;
     }
 }

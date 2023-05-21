@@ -14,23 +14,12 @@ namespace UndefineIntegralQW
         {
             try
             {
-                //string s = new string("");
-                //byte[] buffer = File.ReadAllBytes("C:\\Users\\Student\\Desktop\\Test.csv");
-                //foreach (byte b in buffer)
-                //{
-                //    if (b == 13)
-                //    {
-                //        break;
-                //    }
-                //    s += (char)b;
-                //} // CSV. Перебросить в фреймворк.
-                //MessageBox.Show(s);
                 integral = new UndefinedIntegral(textBox1.Text, new UndefineIntegralEvaluator(textBox1.Text));
                 textBox2.Text = integral.ReturnAnswer();
             }
             catch
             {
-                MessageBox.Show("Вы ошиблись при вводе. Поправьте ошибку.");
+                MessageBox.Show("Вы ошиблись при вводе.");
             }
         }
 

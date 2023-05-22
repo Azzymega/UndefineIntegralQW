@@ -1,5 +1,6 @@
 using QWFramework;
 using QWFramework.Export;
+using QWFramework.Import;
 
 namespace UndefineIntegralQW
 {
@@ -12,15 +13,8 @@ namespace UndefineIntegralQW
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            try
-            {
-                integral = new UndefinedIntegral(textBox1.Text, new UndefineIntegralEvaluator(textBox1.Text));
-                textBox2.Text = integral.ReturnAnswer();
-            }
-            catch
-            {
-                MessageBox.Show("Вы ошиблись при вводе.");
-            }
+            integral = new UndefinedIntegral(textBox1.Text, new UndefineIntegralEvaluator(textBox1.Text));
+            textBox2.Text = integral.ReturnAnswer();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -41,10 +35,22 @@ namespace UndefineIntegralQW
         private void button4_Click(object sender, EventArgs e)
         {
             SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.Filter = "CSV (*.csv)|*.csv";
+            saveFileDialog.Filter = "XLSX (*.xlsx)|*.XLSX";
             if (saveFileDialog.ShowDialog() == DialogResult.OK)
             {
-                CSV rtf = new CSV(saveFileDialog.FileName, textBox2.Text);
+                XLSX rtf = new XLSX(saveFileDialog.FileName, textBox2.Text);
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "XLSX (*.xlsx)|*.XLSX";
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                XLSXImporter importer = new XLSXImporter();
+                importer.Import(openFileDialog.FileName);
+                textBox1.Text = importer.ReturnOutput();
             }
         }
     }

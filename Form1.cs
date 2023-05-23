@@ -1,5 +1,6 @@
 using QWFramework;
 using QWFramework.Export;
+using QWFramework.Import;
 using QWFramework.Core;
 
 namespace UndefineIntegralQW
@@ -43,10 +44,22 @@ namespace UndefineIntegralQW
         private void button4_Click(object sender, EventArgs e)
         {
             SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.Filter = "CSV (*.csv)|*.csv";
+            saveFileDialog.Filter = "XLSX (*.xlsx)|*.XLSX";
             if (saveFileDialog.ShowDialog() == DialogResult.OK)
             {
-                CSV rtf = new CSV(saveFileDialog.FileName, textBox2.Text);
+                XLSX rtf = new XLSX(saveFileDialog.FileName, textBox2.Text);
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "XLSX (*.xlsx)|*.XLSX";
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                XLSXImporter importer = new XLSXImporter();
+                importer.Import(openFileDialog.FileName);
+                textBox1.Text = importer.ReturnOutput();
             }
         }
     }

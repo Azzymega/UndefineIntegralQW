@@ -46,6 +46,7 @@
             label3 = new Label();
             button3 = new Button();
             button4 = new Button();
+            button5 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -226,11 +227,21 @@
             // 
             button4.Location = new Point(240, 3);
             button4.Name = "button4";
-            button4.Size = new Size(222, 23);
+            button4.Size = new Size(275, 23);
             button4.TabIndex = 16;
             button4.Text = "Выгрузить в табличный процессор";
             button4.UseVisualStyleBackColor = true;
             button4.Click += button4_Click;
+            // 
+            // button5
+            // 
+            button5.Location = new Point(521, 3);
+            button5.Name = "button5";
+            button5.Size = new Size(252, 23);
+            button5.TabIndex = 17;
+            button5.Text = "Загрузить через табличный процессор";
+            button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
             // 
             // Form1
             // 
@@ -239,6 +250,7 @@
             BackgroundImage = Properties.Resources.school_blackboard;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(785, 561);
+            Controls.Add(button5);
             Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(textBox1);
@@ -293,5 +305,6 @@
         private Label label3;
         private Button button3;
         private Button button4;
+        private Button button5;
     }
 }

@@ -1,5 +1,6 @@
 using QWFramework;
 using QWFramework.Export;
+using QWFramework.Core;
 
 namespace UndefineIntegralQW
 {
@@ -17,8 +18,9 @@ namespace UndefineIntegralQW
                 integral = new UndefinedIntegral(textBox1.Text, new UndefineIntegralEvaluator(textBox1.Text));
                 textBox2.Text = integral.ReturnAnswer();
             }
-            catch
+            catch (Exception ex)
             {
+                MessageBox.Show(ex.Message);
                 MessageBox.Show("Вы ошиблись при вводе.");
             }
         }

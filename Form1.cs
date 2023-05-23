@@ -19,9 +19,8 @@ namespace UndefineIntegralQW
                 integral = new UndefinedIntegral(textBox1.Text, new UndefineIntegralEvaluator(textBox1.Text));
                 textBox2.Text = integral.ReturnAnswer();
             }
-            catch (Exception ex)
+            catch
             {
-                MessageBox.Show(ex.Message);
                 MessageBox.Show("Вы ошиблись при вводе.");
             }
         }

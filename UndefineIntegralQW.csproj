@@ -14,7 +14,7 @@
 
   <ItemGroup>
     <Reference Include="QWFramework">
-      <HintPath>..\QWFramework\TestParser\bin\Debug\net7.0\QWFramework.dll</HintPath>
+      <HintPath>..\..\..\RiderProjects\TestParser\TestParser\bin\Debug\net7.0\QWFramework.dll</HintPath>
     </Reference>
   </ItemGroup>
 
